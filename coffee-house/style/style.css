@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+button {
+  cursor: pointer;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #e1d4c9;
+  color: #403f3d;
+}
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+.header {
+  padding: 20px 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.header__logo img {
+  width: 100px;
+}
+.header__menu {
+  margin: 16px 366px;
+}
+.menu-list {
+  display: flex;
+}
+.menu-item {
+  margin-right: 40px;
+}
+.menu-item:last-child {
+  margin-right: 0;
+}
+.menu-item a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+}
+.btn-menu {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+}
+.btn-menu span:first-child {
+  margin-right: 8px;
+}

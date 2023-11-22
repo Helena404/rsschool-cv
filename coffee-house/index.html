@@ -68,23 +68,28 @@
 			<h2 class="favorite__title title title-dark">
 				Choose your <span class="title__span">favorite</span> coffee
 			</h2>
-			<div class="carousel">
-				<button class="carousel__arrow carousel__arrow--prev">
+			<div class="slider">
+				<button class="slider__arrow slider__arrow--prev">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 						<path d="M18.5 12H6M6 12L12 6M6 12L12 18" stroke="#403F3D" stroke-linecap="round"
 							stroke-linejoin="round" />
 					</svg>
 				</button>
-				<div class="carousel__content">
-					<div class="carousel__item">
-						<img src="/img/coffee-slider-1.png" alt="S’mores Frappuccino" class="carousel__image">
-						<h3 class="carousel__title">S’mores Frappuccino</h3>
-						<p class="carousel__description">This new drink takes an espresso and mixes it with brown sugar
+				<div class="slider__content">
+					<div class="slider__item">
+						<img src="/img/coffee-slider-1.png" alt="S’mores Frappuccino" class="slider__image">
+						<h3 class="slider__title">S’mores Frappuccino</h3>
+						<p class="slider__description">This new drink takes an espresso and mixes it with brown sugar
 							and cinnamon before being topped with oat milk.</p>
-						<p class="carousel__price">$5.50</p>
+						<p class="slider__price">$5.50</p>
 					</div>
 				</div>
-				<button class="carousel__arrow carousel__arrow--next">
+				<div class="slider__navigation">
+					<div class="dot active"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+				</div>
+				<button class="slider__arrow slider__arrow--next">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 						<path d="M6 12H18.5M18.5 12L12.5 6M18.5 12L12.5 18" stroke="#403F3D" stroke-linecap="round"
 							stroke-linejoin="round" />
@@ -93,6 +98,32 @@
 			</div>
 		</div>
 	</section>
+	<section class="about">
+		<div class="container">
+			<h2 class="about__title title title-dark">Resource is <span class="title__span">the perfect and cozy
+					place</span> where you can enjoy a variety of hot
+				beverages, relax, catch up with friends, or get some work done.</h2>
+			<div class="about__flex-container">
+				<div class="about__images">
+					<div class="about__image">
+						<img src="/img/about-1.jpg" alt="about image" srcset="">
+					</div>
+					<div class="about__image about__image-small">
+						<img src="/img/about-2.jpg" alt="about image" srcset="">
+					</div>
+				</div>
+				<div class="about__images">
+					<div class="about__image about__image-small">
+						<img src="/img/about-3.jpg" alt="about image" srcset="">
+					</div>
+					<div class="about__image">
+						<img src="/img/about-4.jpg" alt="about image" srcset="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 </body>
 
 </html>

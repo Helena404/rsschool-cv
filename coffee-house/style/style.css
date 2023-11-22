@@ -192,7 +192,6 @@ body {
 .slider__arrow--next {
   right: 0;
 }
-/* Стили для секции "about" */
 .about {
   padding-bottom: 100px;
 }
@@ -228,4 +227,71 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.mobile {
+  padding-bottom: 100px;
+}
+.mobile .container {
+  position: relative;
+}
+.mobile__info {
+  padding-top: 144px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+.mobile__title {
+  width: 630px;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 125%;
+}
+.mobile__p {
+  width: 630px;
+  color: #403f3d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.mobile__action {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.mobile__btn {
+  display: flex;
+  width: 200px;
+  padding: 12px 20px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  border: 1px solid #665f55;
+  background: #e1d4c9;
+}
+.mobile__btn-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.mobile__btn-text span {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 140%; /* 14px */
+}
+.mobile__btn-text h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+}
+.mobile__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 630px;
+  height: 630px;
 }

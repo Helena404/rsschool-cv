@@ -1,100 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
+.enjoy {
+  padding-bottom: 100px;
 }
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-input,
-button,
-textarea {
-  font-family: inherit;
-}
-button {
-  cursor: pointer;
-}
-a,
-a:visited {
-  text-decoration: none;
-  color: inherit;
-}
-a:hover {
-  text-decoration: none;
-}
-ul li {
-  list-style-type: none;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-style: inherit;
-  font-weight: 400;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  background: #e1d4c9;
-  color: #403f3d;
-}
-.container {
-  max-width: 1360px;
-  margin: 0 auto;
-}
-.title {
-  color: #e1d4c9;
-  font-size: 72px;
-  font-weight: 600;
-  line-height: 105%;
-}
-.title-dark {
-  color: #403f3d;
-}
-.title__span {
-  color: #b0907a;
-  font-style: italic;
-}
-
-.header {
-  padding: 20px 0;
-}
-.header .container {
-  display: flex;
-  align-items: center;
-}
-.header__logo img {
-  width: 100px;
-  margin-right: 366px;
-}
-.menu-list {
-  display: flex;
-}
-.menu-item {
-  margin-right: 40px;
-}
-.menu-item a {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 150%; /* 24px */
-}
-.menu-item:last-child {
-  margin-right: 0;
-  margin-left: 326px;
-}
-.menu-item__btn-menu {
-  padding-right: 4px;
-}
-.main-content {
-  margin-bottom: 100px;
-}
-.main-content__info {
+.enjoy__info {
   background: url(/img/main-bg.jpg), lightgray 50% / cover no-repeat;
   border-radius: 40px;
   padding: 100px;
@@ -104,17 +11,22 @@ body {
   align-items: flex-start;
   gap: 40px;
 }
-.main-content__title {
+.enjoy__title {
   width: 530px;
+  font-weight: 600;
+  line-height: 105%;
 }
-.main-content__p {
+.enjoy__p {
   width: 530px;
-  color: #e1d4c9;
-  font-size: 16px;
   font-weight: 400;
   line-height: 150%; /* 24px */
 }
-.main-content__btn {
+.enjoy__btn {
+  background: #e1d4c9;
+  color: #403f3d;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
   display: flex;
   width: 200px;
   padding: 20px 78px;
@@ -122,7 +34,7 @@ body {
   align-items: center;
   gap: 8px;
   border-radius: 100px;
-  background: #e1d4c9;
+  cursor: pointer;
 }
 
 .favorite {
@@ -130,7 +42,6 @@ body {
 }
 .favorite__title {
   text-align: center;
-  font-size: 60px;
   font-weight: 600;
   line-height: 125%; /* 75px */
   margin-bottom: 40px;
@@ -140,7 +51,7 @@ body {
 }
 .slider__arrow {
   position: absolute;
-  top: 50%;
+  top: 46%;
   transform: translateY(-50%);
   width: 60px;
   height: 60px;
@@ -155,20 +66,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 18px;
 }
 .slider__title,
 .slider__price {
-  color: #403f3d;
   font-size: 24px;
   font-weight: 600;
   line-height: 125%; /* 30px */
 }
-.slider__image {
-}
 .slider__description {
   max-width: 480px;
-  font-size: 16px;
   font-weight: 400;
   line-height: 150%; /* 24px */
   text-align: center;
@@ -192,12 +99,11 @@ body {
 .slider__arrow--next {
   right: 0;
 }
+
 .about {
   padding-bottom: 100px;
 }
-
 .about__title {
-  font-size: 60px;
   font-weight: 600;
   line-height: 125%; /* 75px */
   padding-bottom: 40px;
@@ -210,7 +116,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: top;
+  justify-content: flex-start;
   gap: 40px;
 }
 .about__image {
@@ -230,10 +136,11 @@ body {
 }
 
 .mobile {
-  padding-bottom: 100px;
+  padding-bottom: 95px;
 }
 .mobile .container {
-  position: relative;
+  display: flex;
+  gap: 100px;
 }
 .mobile__info {
   padding-top: 144px;
@@ -245,14 +152,11 @@ body {
 }
 .mobile__title {
   width: 630px;
-  font-size: 60px;
   font-weight: 600;
   line-height: 125%;
 }
 .mobile__p {
   width: 630px;
-  color: #403f3d;
-  font-size: 16px;
   font-weight: 400;
   line-height: 150%; /* 24px */
 }
@@ -271,6 +175,7 @@ body {
   border-radius: 100px;
   border: 1px solid #665f55;
   background: #e1d4c9;
+  cursor: pointer;
 }
 .mobile__btn-text {
   display: flex;
@@ -289,9 +194,6 @@ body {
   line-height: 150%; /* 24px */
 }
 .mobile__img {
-  position: absolute;
-  top: 0;
-  right: 0;
   width: 630px;
   height: 630px;
 }

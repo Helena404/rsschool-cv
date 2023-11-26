@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'Emoji';
+  src: url(/fonts/NotoColorEmoji.ttf);
+}
+.menu {
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.menu .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 38px;
+}
+.menu__title {
+  width: 800px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 125%; /* 75px */
+}
+.menu__filters {
+  display: flex;
+  gap: 16px;
+}
+.menu__filter-btn {
+  display: flex;
+  padding: 8px 16px 8px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  border: 1px solid #c1b6ad;
+  background: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+}
+.menu__filter-icon {
+  font-family: 'Emoji';
+  font-size: 16px;
+  line-height: 150%; /* 24px */
+  display: flex;
+  padding: 3px 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #c1b6ad;
+}
+
+.menu__filter-btn:hover {
+  color: #fff;
+}
+.menu__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.menu__item {
+  width: 310px;
+  border-radius: 40px;
+  border: 1px solid #c1b6ad;
+}
+.menu__item-img {
+  width: 100%;
+  border-radius: 40px;
+}
+.menu__item-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  padding: 20px;
+}
+.menu__item-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%; /* 30px */
+}
+.menu__item-description {
+  width: 270px;
+  min-height: 72px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.menu__item-price {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%; /* 30px */
+}

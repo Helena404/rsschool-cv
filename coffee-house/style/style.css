@@ -1,0 +1,235 @@
+.enjoy {
+  padding-bottom: 100px;
+}
+.enjoy__info {
+  background: url(/img/main-bg.jpg);
+  border-radius: 40px;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+.enjoy__title {
+  width: 530px;
+  font-weight: 600;
+  line-height: 105%;
+}
+.enjoy__p {
+  width: 530px;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.enjoy__btn {
+  background: #e1d4c9;
+  color: #403f3d;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  display: flex;
+  width: 200px;
+  padding: 20px 78px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.enjoy__btn-hover {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.enjoy__btn:hover .enjoy__btn-hover {
+  opacity: 1;
+}
+
+.favorite {
+  padding-bottom: 100px;
+}
+.favorite__title {
+  text-align: center;
+  font-weight: 600;
+  line-height: 125%; /* 75px */
+  margin-bottom: 40px;
+}
+.slider {
+  position: relative;
+}
+.slider__arrow {
+  position: absolute;
+  top: 46%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  border: 1px solid #665f55;
+  background: transparent;
+
+  transition: all 0.3s ease;
+}
+.slider__arrow--prev {
+  left: 0;
+}
+.slider__arrow svg {
+  stroke: #403f3d;
+}
+
+/* Стили для кнопки при наведении */
+.slider__arrow:hover {
+  background: #665f55;
+}
+.slider__arrow:hover svg {
+  stroke: #e1d4c9;
+}
+.slider__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.slider__title,
+.slider__price {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%; /* 30px */
+}
+.slider__description {
+  max-width: 480px;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  text-align: center;
+}
+.slider__navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 12px;
+}
+.dot {
+  width: 40px;
+  height: 4px;
+  border-radius: 100px;
+  background: #c1b6ad;
+  cursor: pointer;
+}
+.active {
+  background: #665f55;
+}
+.slider__arrow--next {
+  right: 0;
+}
+
+.about {
+  padding-bottom: 100px;
+}
+.about__title {
+  font-weight: 600;
+  line-height: 125%; /* 75px */
+  padding-bottom: 40px;
+}
+.about__flex-container {
+  display: flex;
+  gap: 40px;
+}
+.about__images {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 40px;
+}
+.about__image {
+  width: 660px;
+  height: 590px;
+  border-radius: 20px;
+}
+.about__image.about__image-small {
+  width: 660px;
+  height: 430px;
+}
+.about__image img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.mobile {
+  padding-bottom: 95px;
+}
+.mobile .container {
+  display: flex;
+  gap: 100px;
+}
+.mobile__info {
+  padding-top: 144px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+.mobile__title {
+  width: 630px;
+  font-weight: 600;
+  line-height: 125%;
+}
+.mobile__p {
+  width: 630px;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.mobile__action {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.mobile__btn {
+  display: flex;
+  width: 200px;
+  padding: 12px 20px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  border: 1px solid #665f55;
+  background: #e1d4c9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.mobile__btn svg {
+  fill: #403f3d;
+}
+
+.mobile__btn-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.mobile__btn-text span {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 140%; /* 14px */
+}
+.mobile__btn-text h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+}
+.mobile__img {
+  width: 630px;
+  height: 630px;
+}
+
+/* Стили для кнопки при наведении */
+
+.mobile__btn:hover {
+  background: #665f55;
+  color: #e1d4c9;
+}
+.mobile__btn:hover svg {
+  fill: #e1d4c9;
+}

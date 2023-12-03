@@ -1,5 +1,5 @@
 /* Для разрешения от 769px до 1439px */
-@media only screen and (min-width: 769px) and (max-width: 1439px) {
+@media only screen and (min-width: 769px) and (max-width: 1000px) {
   .container {
     max-width: 668px;
   }

@@ -1,0 +1,22 @@
+/* Для разрешения от 769px до 1439px */
+@media only screen and (min-width: 769px) and (max-width: 1439px) {
+  .container {
+    max-width: 668px;
+  }
+  .menu-list {
+    display: none;
+  }
+  .header__menu .header__burger-menu {
+    display: block;
+  }
+}
+
+/* Для разрешения от 381px до 768px */
+@media only screen and (min-width: 381px) and (max-width: 768px) {
+  /* Ваши стили для маленьких экранов */
+}
+
+/* Для разрешения 380px и ниже */
+@media only screen and (max-width: 380px) {
+  /* Ваши стили для очень маленьких экранов */
+}

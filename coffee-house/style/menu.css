@@ -2,6 +2,7 @@
   font-family: 'Emoji';
   src: url(../fonts/NotoColorEmoji.ttf);
 }
+
 .menu {
   margin: 0 auto;
   padding-bottom: 100px;
@@ -74,14 +75,31 @@
   border-radius: 40px;
   border: 1px solid #c1b6ad;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .menu__item-img {
   width: 310px;
-  max-height: 310px;
+  height: 310px;
+  object-fit: cover;
   border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
+.menu__item-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+  transform: scale(1.1);
+}
+.menu__item:hover .menu__item-img img {
+  transform: scale(1);
+}
 .menu__item-text {
   display: flex;
   flex-direction: column;

@@ -65,6 +65,10 @@ h2 {
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
+.inactive-menu {
+  pointer-events: none;
+  border-bottom: #403f3d 2px solid;
+}
 
 .menu-item a:hover:after {
   transform: scaleX(1);

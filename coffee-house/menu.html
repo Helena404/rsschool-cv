@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Resource</title>
 	<link rel="icon" type="image/x-icon" href="img/logo.png">
 	<link rel="stylesheet" href="style/menu.css">
 	<link rel="stylesheet" href="style/reset.css">
@@ -21,12 +21,12 @@
 			</div>
 			<nav class="header__menu">
 				<ul class="menu-list">
-					<li class="menu-item"><a href="#favorite">Favorite coffee</a></li>
-					<li class="menu-item"><a href="#about">About</a></li>
-					<li class="menu-item"><a href="#mobile">Mobile app</a></li>
+					<li class="menu-item"><a href="index.html#favorite">Favorite coffee</a></li>
+					<li class="menu-item"><a href="index.html#about">About</a></li>
+					<li class="menu-item"><a href="index.html#mobile">Mobile app</a></li>
 					<li class="menu-item"><a href="#contacts">Contact us</a></li>
 					<li class="menu-item">
-						<a href="menu.html">
+						<a href="menu.html" id="menu">
 							<span class="menu-item__btn-menu">Menu</span>
 							<span>
 								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
@@ -71,7 +71,9 @@
 
 			<div class="menu__items">
 				<div class="menu__item">
-					<img src="img/menu/coffee-1.jpg" alt="Coffee 1" class="menu__item-img">
+					<div class="menu__item-img">
+						<img src="img/menu/coffee-1.jpg" alt="Coffee 1">
+					</div>
 					<div class="menu__item-text">
 						<h3 class="menu__item-title">Irish coffee</h3>
 						<p class="menu__item-description">Fragrant black coffee with Jameson Irish whiskey and whipped
@@ -81,7 +83,9 @@
 					</div>
 				</div>
 				<div class="menu__item">
-					<img src="img/menu/coffee-2.jpg" alt="Coffee 2" class="menu__item-img">
+					<div class="menu__item-img">
+						<img src="img/menu/coffee-2.jpg" alt="Coffee 1">
+					</div>
 					<div class="menu__item-text">
 						<h3 class="menu__item-title">Kahlua coffee</h3>
 						<p class="menu__item-description">Classic coffee with milk and Kahlua liqueur under a cap of
@@ -91,7 +95,9 @@
 					</div>
 				</div>
 				<div class="menu__item">
-					<img src="img/menu/coffee-3.jpg" alt="Coffee 3" class="menu__item-img">
+					<div class="menu__item-img">
+						<img src="img/menu/coffee-3.jpg" alt="Coffee 1">
+					</div>
 					<div class="menu__item-text">
 						<h3 class="menu__item-title">Honey raf</h3>
 						<p class="menu__item-description">Espresso with frothed milk, cream and aromatic honey
@@ -100,7 +106,9 @@
 					</div>
 				</div>
 				<div class="menu__item">
-					<img src="img/menu/coffee-4.jpg" alt="Coffee 4" class="menu__item-img">
+					<div class="menu__item-img">
+						<img src="img/menu/coffee-4.jpg" alt="Coffee 1">
+					</div>
 					<div class="menu__item-text">
 						<h3 class="menu__item-title">Ice cappuccino</h3>
 						<p class="menu__item-description">Cappuccino with soft thick foam in summer version with ice
@@ -109,7 +117,9 @@
 					</div>
 				</div>
 				<div class="menu__item">
-					<img src="img/menu/coffee-5.jpg" alt="Coffee 5" class="menu__item-img">
+					<div class="menu__item-img">
+						<img src="img/menu/coffee-5.jpg" alt="Coffee 1">
+					</div>
 					<div class="menu__item-text">
 						<h3 class="menu__item-title">Espresso</h3>
 						<p class="menu__item-description">Classic black coffee
@@ -118,7 +128,9 @@
 					</div>
 				</div>
 				<div class="menu__item">
-					<img src="img/menu/coffee-6.jpg" alt="Coffee 6" class="menu__item-img">
+					<div class="menu__item-img">
+						<img src="img/menu/coffee-6.jpg" alt="Coffee 1">
+					</div>
 					<div class="menu__item-text">
 						<h3 class="menu__item-title">Latte</h3>
 						<p class="menu__item-description">Espresso coffee with the addition of steamed milk and dense
@@ -128,7 +140,9 @@
 					</div>
 				</div>
 				<div class="menu__item">
-					<img src="img/menu/coffee-7.jpg" alt="Coffee 7" class="menu__item-img">
+					<div class="menu__item-img">
+						<img src="img/menu/coffee-7.jpg" alt="Coffee 1">
+					</div>
 					<div class="menu__item-text">
 						<h3 class="menu__item-title">Latte macchiato</h3>
 						<p class="menu__item-description">Espresso with frothed milk and chocolate
@@ -137,7 +151,9 @@
 					</div>
 				</div>
 				<div class="menu__item">
-					<img src="img/menu/coffee-8.jpg" alt="Coffee 8" class="menu__item-img">
+					<div class="menu__item-img">
+						<img src="img/menu/coffee-8.jpg" alt="Coffee 1">
+					</div>
 					<div class="menu__item-text">
 						<h3 class="menu__item-title">Coffee with cognac</h3>
 						<p class="menu__item-description">Fragrant black coffee with cognac and whipped cream
@@ -189,29 +205,33 @@
 				<div class="footer__column">
 					<h3 class="footer__column-title">Contact us</h3>
 					<div class="footer__contacts">
-						<a class="footer__contact" href="https://maps.app.goo.gl/6P3MUahVsN2dgPun9">
-							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-								fill="none">
-								<path
-									d="M16.6663 8.33329C16.6663 12.0152 9.99967 18.3333 9.99967 18.3333C9.99967 18.3333 3.33301 12.0152 3.33301 8.33329C3.33301 4.65139 6.31778 1.66663 9.99967 1.66663C13.6816 1.66663 16.6663 4.65139 16.6663 8.33329Z"
-									stroke="#E1D4C9" stroke-width="1.5" />
-								<path
-									d="M10.0003 9.16667C10.4606 9.16667 10.8337 8.79357 10.8337 8.33333C10.8337 7.8731 10.4606 7.5 10.0003 7.5C9.54009 7.5 9.16699 7.8731 9.16699 8.33333C9.16699 8.79357 9.54009 9.16667 10.0003 9.16667Z"
-									fill="#E1D4C9" stroke="#E1D4C9" stroke-width="1.5" stroke-linecap="round"
-									stroke-linejoin="round" />
-							</svg>
-							<span>8558 Green Rd., LA</span>
-						</a>
-						<a class="footer__contact" href="tel:+16035550123">
-							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-								fill="none">
-								<path
-									d="M15.0984 12.2516L11.6665 12.9166C9.34845 11.7531 7.91654 10.4166 7.08321 8.33329L7.72483 4.89154L6.51197 1.66663L3.72946 1.66663C2.60191 1.66663 1.71466 2.59958 1.90108 3.71161C2.29888 6.08454 3.37231 10.0391 6.24987 12.9166C9.27338 15.9401 13.5661 17.3318 16.1378 17.9288C17.299 18.1983 18.3332 17.2908 18.3332 16.0988L18.3332 13.4843L15.0984 12.2516Z"
-									stroke="#E1D4C9" stroke-width="1.5" stroke-linecap="round"
-									stroke-linejoin="round" />
-							</svg>
-							<span>+1 (603) 555-0123</span>
-						</a>
+						<div class="footer__contact">
+							<a href="https://maps.app.goo.gl/6P3MUahVsN2dgPun9">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+									fill="none">
+									<path
+										d="M16.6663 8.33329C16.6663 12.0152 9.99967 18.3333 9.99967 18.3333C9.99967 18.3333 3.33301 12.0152 3.33301 8.33329C3.33301 4.65139 6.31778 1.66663 9.99967 1.66663C13.6816 1.66663 16.6663 4.65139 16.6663 8.33329Z"
+										stroke="#E1D4C9" stroke-width="1.5" />
+									<path
+										d="M10.0003 9.16667C10.4606 9.16667 10.8337 8.79357 10.8337 8.33333C10.8337 7.8731 10.4606 7.5 10.0003 7.5C9.54009 7.5 9.16699 7.8731 9.16699 8.33333C9.16699 8.79357 9.54009 9.16667 10.0003 9.16667Z"
+										fill="#E1D4C9" stroke="#E1D4C9" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+								<span>8558 Green Rd., LA</span>
+							</a>
+						</div>
+						<div class="footer__contact">
+							<a href="tel:+16035550123">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+									fill="none">
+									<path
+										d="M15.0984 12.2516L11.6665 12.9166C9.34845 11.7531 7.91654 10.4166 7.08321 8.33329L7.72483 4.89154L6.51197 1.66663L3.72946 1.66663C2.60191 1.66663 1.71466 2.59958 1.90108 3.71161C2.29888 6.08454 3.37231 10.0391 6.24987 12.9166C9.27338 15.9401 13.5661 17.3318 16.1378 17.9288C17.299 18.1983 18.3332 17.2908 18.3332 16.0988L18.3332 13.4843L15.0984 12.2516Z"
+										stroke="#E1D4C9" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+								<span>+1 (603) 555-0123</span>
+							</a>
+						</div>
 						<div class="footer__contact">
 							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
 								fill="none">
@@ -236,6 +256,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="script/app.js"></script>
 </body>
 
 </html>

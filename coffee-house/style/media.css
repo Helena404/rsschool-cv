@@ -105,6 +105,14 @@
   .enjoy__info {
     padding: 10rem 6rem;
   }
+  .enjoy__title {
+    width: auto;
+    font-size: 4.2rem;
+    line-height: 115%;
+  }
+  .enjoy__p {
+    width: auto;
+  }
   .about__flex-container {
     flex-direction: column;
     align-items: flex-start;

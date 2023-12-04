@@ -76,11 +76,192 @@
   }
 }
 
-/* Для разрешения от 381px до 768px */
-@media only screen and (min-width: 381px) and (max-width: 768px) {
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+  .container {
+    max-width: 56rem;
+  }
+  .menu-list {
+    display: none;
+  }
+  .header__menu .header__burger-menu {
+    display: block;
+  }
+  .enjoy__info {
+    padding: 10rem 6rem;
+  }
+  .about__flex-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about__image {
+    width: 56rem;
+  }
+  .about__image.about__image-small {
+    display: none;
+  }
+  .mobile__info {
+    padding-top: 0;
+  }
+  .mobile .container {
+    flex-direction: column;
+  }
+  .mobile__title {
+    width: auto;
+  }
+  .footer__info {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10rem 6rem;
+  }
+  .footer__title {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 380px) and (max-width: 576px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    max-width: 34.8rem;
+  }
+  .menu-list {
+    display: none;
+  }
+  h2 {
+    font-size: 3.2rem;
+  }
+  .header__menu .header__burger-menu {
+    display: block;
+  }
+  .enjoy__info {
+    padding: 6rem 1.6rem;
+  }
+  .enjoy__title {
+    width: auto;
+    font-size: 4.2rem;
+    line-height: 115%;
+  }
+  .enjoy__p {
+    width: auto;
+  }
+  .slider__arrow {
+    display: none;
+  }
+  .slider__image {
+    width: 100%;
+  }
+  .about__flex-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about__image {
+    width: 34.8rem;
+  }
+  .about__image.about__image-small {
+    display: none;
+  }
+  .mobile__info {
+    padding-top: 0rem;
+  }
+  .mobile .container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .mobile__title,
+  .mobile__p {
+    width: auto;
+  }
+  .mobile__action {
+    flex-direction: column;
+  }
+  .mobile__img {
+    width: 34.8rem;
+    height: auto;
+  }
+  .footer__info {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 6rem 1.6rem;
+    gap: 4rem;
+  }
+  .footer__title {
+    width: auto;
+  }
 }
 
 /* Для разрешения 380px и ниже */
 @media only screen and (max-width: 380px) {
-  /* Ваши стили для очень маленьких экранов */
+  html {
+    font-size: 8px;
+  }
+  .container {
+    max-width: 30rem;
+  }
+  .menu-list {
+    display: none;
+  }
+  h2 {
+    font-size: 3.2rem;
+  }
+  .header__menu .header__burger-menu {
+    display: block;
+  }
+  .enjoy__info {
+    padding: 6rem 1.6rem;
+  }
+  .enjoy__title {
+    width: auto;
+    font-size: 4.2rem;
+    line-height: 115%;
+  }
+  .enjoy__p {
+    width: auto;
+  }
+  .slider__arrow {
+    display: none;
+  }
+  .slider__image {
+    width: 100%;
+  }
+  .about__flex-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about__image {
+    width: 30rem;
+  }
+  .about__image.about__image-small {
+    display: none;
+  }
+  .mobile__info {
+    padding-top: 0rem;
+  }
+  .mobile .container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .mobile__title,
+  .mobile__p {
+    width: auto;
+  }
+  .mobile__action {
+    flex-direction: column;
+  }
+  .mobile__img {
+    width: 30rem;
+    height: auto;
+  }
+  .footer__info {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 6rem 1.6rem;
+    gap: 4rem;
+  }
+  .footer__title {
+    width: auto;
+  }
 }

@@ -1,7 +1,42 @@
 /* Для разрешения от 769px до 1439px */
-@media only screen and (min-width: 769px) and (max-width: 1000px) {
+@media only screen and (min-width: 992px) and (max-width: 1439px) {
+  html {
+    font-size: 7px;
+  }
+  .menu-item:last-child {
+    margin-left: 26rem;
+  }
+  .about__image {
+    width: 100%;
+  }
+  .mobile__img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  html {
+    font-size: 8px;
+  }
+  .menu-item:last-child {
+    margin-left: 26rem;
+  }
+  .about__image {
+    width: 100%;
+  }
+  .mobile__img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  html {
+    font-size: 10px;
+  }
   .container {
-    max-width: 668px;
+    max-width: 68rem;
   }
   .menu-list {
     display: none;
@@ -9,11 +44,40 @@
   .header__menu .header__burger-menu {
     display: block;
   }
+  .enjoy__info {
+    padding: 10rem 6rem;
+  }
+  .about__flex-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about__image {
+    width: 68rem;
+  }
+  .about__image.about__image-small {
+    display: none;
+  }
+  .mobile__info {
+    padding-top: 0;
+  }
+  .mobile .container {
+    flex-direction: column;
+  }
+  .mobile__title {
+    width: auto;
+  }
+  .footer__info {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10rem 6rem;
+  }
+  .footer__title {
+    width: auto;
+  }
 }
 
 /* Для разрешения от 381px до 768px */
 @media only screen and (min-width: 381px) and (max-width: 768px) {
-  /* Ваши стили для маленьких экранов */
 }
 
 /* Для разрешения 380px и ниже */

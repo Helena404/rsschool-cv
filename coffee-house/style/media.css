@@ -1,7 +1,6 @@
-/* Для разрешения от 769px до 1439px */
-@media only screen and (min-width: 992px) and (max-width: 1439px) {
+@media only screen and (min-width: 1201px) and (max-width: 1439px) {
   html {
-    font-size: 7px;
+    font-size: 8px;
   }
   .menu-item:last-child {
     margin-left: 26rem;
@@ -15,9 +14,9 @@
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
   html {
-    font-size: 8px;
+    font-size: 7px;
   }
   .menu-item:last-child {
     margin-left: 26rem;
@@ -74,9 +73,23 @@
   .footer__title {
     width: auto;
   }
+
+  /* for menu.html */
+  .menu__title {
+    width: auto;
+  }
+  .menu__item:nth-child(n + 5) {
+    display: none;
+  }
+  .menu__next-page {
+    display: none;
+  }
+  .menu__next-page {
+    display: block;
+  }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 768px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   html {
     font-size: 8px;
   }
@@ -118,6 +131,28 @@
   }
   .footer__title {
     width: auto;
+  }
+
+  /* for menu.html */
+  .menu__title {
+    width: auto;
+  }
+  .menu__item {
+    width: 26rem;
+  }
+  .menu__item-img {
+    width: 26rem;
+    height: 26rem;
+  }
+
+  .menu__item:nth-child(n + 5) {
+    display: none;
+  }
+  .menu__next-page {
+    display: none;
+  }
+  .menu__next-page {
+    display: block;
   }
 }
 
@@ -191,10 +226,26 @@
   .footer__title {
     width: auto;
   }
+
+  /* for menu.html */
+  .menu__title {
+    width: auto;
+  }
+  .menu__filters {
+    gap: 1rem;
+  }
+  .menu__item:nth-child(n + 5) {
+    display: none;
+  }
+  .menu__next-page {
+    display: none;
+  }
+  .menu__next-page {
+    display: block;
+  }
 }
 
-/* Для разрешения 380px и ниже */
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 379px) {
   html {
     font-size: 8px;
   }
@@ -263,5 +314,22 @@
   }
   .footer__title {
     width: auto;
+  }
+
+  /* for menu.html */
+  .menu__title {
+    width: auto;
+  }
+  .menu__filters {
+    gap: 1rem;
+  }
+  .menu__item:nth-child(n + 5) {
+    display: none;
+  }
+  .menu__next-page {
+    display: none;
+  }
+  .menu__next-page {
+    display: block;
   }
 }

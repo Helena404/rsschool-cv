@@ -2,7 +2,10 @@
   font-family: 'Emoji';
   src: url(../fonts/NotoColorEmoji.ttf);
 }
-
+.inactive-menu {
+  pointer-events: none;
+  border-bottom: #403f3d 0.2rem solid;
+}
 .menu {
   margin: 0 auto;
   padding-bottom: 10rem;
@@ -57,12 +60,14 @@
 .menu__filter-icon-active {
   background: #e1d4c9;
 }
-.menu__filter-btn:hover {
-  background: #665f55;
-  color: #e1d4c9;
-}
-.menu__filter-btn:hover .menu__filter-icon {
-  background: #e1d4c9;
+@media (hover: hover) {
+  .menu__filter-btn:hover {
+    background: #665f55;
+    color: #e1d4c9;
+  }
+  .menu__filter-btn:hover .menu__filter-icon {
+    background: #e1d4c9;
+  }
 }
 
 .menu__items {
@@ -98,9 +103,12 @@
   transition: transform 0.5s;
   transform: scale(1.1);
 }
-.menu__item:hover .menu__item-img img {
-  transform: scale(1);
+@media (hover: hover) {
+  .menu__item:hover .menu__item-img img {
+    transform: scale(1);
+  }
 }
+
 .menu__item-text {
   display: flex;
   flex-direction: column;

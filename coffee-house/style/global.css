@@ -89,14 +89,14 @@ h2 {
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
-.inactive-menu {
-  pointer-events: none;
-  border-bottom: #403f3d 0.2rem solid;
+
+
+@media (hover: hover) {
+  .menu-item a:hover:after {
+    transform: scaleX(1);
+  }
 }
 
-.menu-item a:hover:after {
-  transform: scaleX(1);
-}
 .footer {
   padding-bottom: 4rem;
 }
@@ -159,12 +159,18 @@ h2 {
   stroke: #e1d4c9;
 }
 
-.footer__social-link:hover {
-  background: #e1d4c9;
+@media (hover: hover) {
+  .footer__social-link:hover {
+    background: #e1d4c9;
+  }
+  .footer__social-link:hover svg {
+    stroke: #403f3d;
+  }
+  .footer__contact:hover:after {
+    transform: scaleX(1);
+  }
 }
-.footer__social-link:hover svg {
-  stroke: #403f3d;
-}
+
 .footer__contact:after {
   content: '';
   position: absolute;
@@ -175,8 +181,4 @@ h2 {
   background-color: #e1d4c9;
   transform: scaleX(0);
   transition: transform 0.3s ease;
-}
-
-.footer__contact:hover:after {
-  transform: scaleX(1);
 }

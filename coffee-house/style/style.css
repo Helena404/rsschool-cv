@@ -39,6 +39,7 @@
 .enjoy__btn:visited {
   color: #403f3d;
 }
+@media (hover: hover) {
 .enjoy__btn-hover {
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -46,6 +47,8 @@
 .enjoy__btn:hover .enjoy__btn-hover {
   opacity: 1;
 }
+}
+
 
 .favorite {
   padding-bottom: 10rem;
@@ -79,12 +82,15 @@
 }
 
 /* Стили для кнопки при наведении */
+@media (hover: hover) {
 .slider__arrow:hover {
   background: #665f55;
 }
 .slider__arrow:hover svg {
   stroke: #e1d4c9;
 }
+}
+
 .slider__item {
   display: flex;
   flex-direction: column;
@@ -162,9 +168,12 @@
   transition: transform 0.5s;
   transform: scale(1.1);
 }
+@media (hover: hover) {
 .about__image img:hover {
   transform: scale(1);
 }
+}
+
 .mobile {
   padding-bottom: 9.2rem;
 }
@@ -234,7 +243,7 @@
 }
 
 /* Стили для кнопки при наведении */
-
+@media (hover: hover) {
 .mobile__btn:hover {
   background: #665f55;
   color: #e1d4c9;
@@ -242,3 +251,5 @@
 .mobile__btn:hover svg {
   fill: #e1d4c9;
 }
+
+  }

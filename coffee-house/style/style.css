@@ -1,44 +1,45 @@
 .enjoy {
-  padding-bottom: 100px;
+  padding-bottom: 10rem;
 }
 .enjoy__info {
-  background: url(../img/main-bg.jpg);
-  border-radius: 40px;
-  padding: 100px;
+  background: url(../img/main-bg.jpg) center no-repeat;
+  border-radius: 4rem;
+  padding: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 40px;
+  gap: 4rem;
 }
 .enjoy__title {
-  width: 530px;
+  width: 53rem;
   font-weight: 600;
   line-height: 105%;
 }
 .enjoy__p {
-  width: 530px;
+  width: 53rem;
   font-weight: 400;
   line-height: 150%; /* 24px */
 }
 .enjoy__btn {
   color: #403f3d;
   background: #e1d4c9;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
   line-height: 150%;
   display: flex;
-  width: 200px;
-  padding: 20px 78px;
+  width: 20rem;
+  padding: 2rem 7.8rem;
   justify-content: flex-start;
   align-items: center;
-  gap: 8px;
-  border-radius: 100px;
+  gap: 0.8rem;
+  border-radius: 10rem;
   cursor: pointer;
 }
 .enjoy__btn:visited {
   color: #403f3d;
 }
+@media (hover: hover) {
 .enjoy__btn-hover {
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -46,15 +47,17 @@
 .enjoy__btn:hover .enjoy__btn-hover {
   opacity: 1;
 }
+}
+
 
 .favorite {
-  padding-bottom: 100px;
+  padding-bottom: 10rem;
 }
 .favorite__title {
   text-align: center;
   font-weight: 600;
   line-height: 125%; /* 75px */
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 .slider {
   position: relative;
@@ -63,10 +66,10 @@
   position: absolute;
   top: 46%;
   transform: translateY(-50%);
-  width: 60px;
-  height: 60px;
-  border-radius: 100px;
-  border: 1px solid #665f55;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 10rem;
+  border: 0.1rem solid #665f55;
   background: transparent;
 
   transition: all 0.3s ease;
@@ -79,26 +82,29 @@
 }
 
 /* Стили для кнопки при наведении */
+@media (hover: hover) {
 .slider__arrow:hover {
   background: #665f55;
 }
 .slider__arrow:hover svg {
   stroke: #e1d4c9;
 }
+}
+
 .slider__item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 18px;
+  gap: 1.8rem;
 }
 .slider__title,
 .slider__price {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 600;
   line-height: 125%; /* 30px */
 }
 .slider__description {
-  max-width: 480px;
+  max-width: 48rem;
   font-weight: 400;
   line-height: 150%; /* 24px */
   text-align: center;
@@ -106,13 +112,13 @@
 .slider__navigation {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-  gap: 12px;
+  margin-top: 4rem;
+  gap: 1.2rem;
 }
 .dot {
-  width: 40px;
-  height: 4px;
-  border-radius: 100px;
+  width: 4rem;
+  height: 0.4rem;
+  border-radius: 10rem;
   background: #c1b6ad;
   cursor: pointer;
 }
@@ -124,80 +130,89 @@
 }
 
 .about {
-  padding-bottom: 100px;
+  padding-bottom: 10rem;
 }
 .about__title {
   font-weight: 600;
   line-height: 125%; /* 75px */
-  padding-bottom: 40px;
+  padding-bottom: 4rem;
 }
 .about__flex-container {
   display: flex;
-  gap: 40px;
+  gap: 4rem;
 }
 .about__images {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: flex-start;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 40px;
+  gap: 4rem;
 }
 .about__image {
-  width: 660px;
-  height: 590px;
-  border-radius: 20px;
+  width: 66rem;
+  height: 59rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 .about__image.about__image-small {
-  width: 660px;
-  height: 430px;
+  height: 43rem;
 }
 .about__image img {
-  border-radius: 20px;
+  display: block;
   width: 100%;
   height: 100%;
-  background-size: cover;
   object-fit: cover;
+  transition: transform 0.5s;
+  transform: scale(1.1);
+}
+@media (hover: hover) {
+.about__image img:hover {
+  transform: scale(1);
+}
 }
 
 .mobile {
-  padding-bottom: 95px;
+  padding-bottom: 9.2rem;
 }
 .mobile .container {
   display: flex;
-  gap: 100px;
+  gap: 10rem;
 }
 .mobile__info {
-  padding-top: 144px;
+  padding-top: 14.4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 40px;
+  gap: 4rem;
 }
 .mobile__title {
-  width: 630px;
+  width: 63rem;
   font-weight: 600;
   line-height: 125%;
 }
 .mobile__p {
-  width: 630px;
+  width: 63rem;
   font-weight: 400;
   line-height: 150%; /* 24px */
 }
 .mobile__action {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 2rem;
 }
 .mobile__btn {
   display: flex;
-  width: 200px;
-  padding: 12px 20px;
+  width: 20rem;
+  padding: 1.2rem 2rem;
   justify-content: flex-start;
   align-items: center;
-  gap: 8px;
-  border-radius: 100px;
-  border: 1px solid #665f55;
+  gap: 0.8rem;
+  border-radius: 10rem;
+  border: 0.1rem solid #665f55;
   background: #e1d4c9;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -213,22 +228,22 @@
   justify-content: flex-start;
 }
 .mobile__btn-text span {
-  font-size: 10px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 140%; /* 14px */
 }
 .mobile__btn-text h3 {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
   line-height: 150%; /* 24px */
 }
 .mobile__img {
-  width: 630px;
-  height: 630px;
+  width: 63rem;
+  height: 63rem;
 }
 
 /* Стили для кнопки при наведении */
-
+@media (hover: hover) {
 .mobile__btn:hover {
   background: #665f55;
   color: #e1d4c9;
@@ -236,3 +251,5 @@
 .mobile__btn:hover svg {
   fill: #e1d4c9;
 }
+
+  }

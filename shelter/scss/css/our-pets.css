@@ -1,0 +1,10 @@
+.header {
+  background-color: var(--color-light-s);
+}
+.header .header__logo-title,
+.header .header__menu-link {
+  color: var(--color-dark-l);
+}
+.header .header__logo-subtitle {
+  color: var(--color-dark-3xl);
+}/*# sourceMappingURL=our-pets.css.map */

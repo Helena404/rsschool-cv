@@ -1,0 +1,21 @@
+@mixin header-dark {
+	.header__logo-title{
+		color: var(--color-primary);
+	}
+	.header__logo-subtitle{
+		color: var(--color-light-xl);
+	}
+	.header__menu-link {
+		color: var(--color-dark-s);
+	}
+  }
+
+  @mixin header-light {
+	.header__logo-title,
+	.header__menu-link{
+		color: var(--color-dark-l);
+	}
+	.header__logo-subtitle{
+		color: var(--color-dark-3xl);
+	}
+  }

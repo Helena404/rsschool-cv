@@ -1,0 +1,72 @@
+.header-main {
+  @include header-light;
+}
+
+
+.pets {
+
+	// .pets__container
+
+	&__container {
+		padding-block: 80px 100px;
+		display: flex;
+		flex-direction: column;
+		row-gap: 60px;
+		align-items:center;
+	}
+
+	// .pets__title
+
+	&__title {
+		text-align: center;
+	}
+
+	// .pets__cards
+
+	&__cards {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 30px 40px;
+	}
+
+	// .pets__pagination
+
+	&__pagination {
+		display: flex;
+		column-gap: 20px;
+	}
+
+	// .pets__pagination-btn
+
+	&__pagination-btn {
+		padding: 0;
+		width: 52px;
+		height: 52px;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: var(--color-light-s);
+		border: 1px solid var(--color-primary);
+	}
+
+	// .pets__pagination-btn--inactive
+
+	&__pagination-btn--inactive {
+		color: var(--color-dark-s);
+		border: 1px solid var(--color-dark-s);
+		cursor: not-allowed;
+		pointer-events: none;
+	}
+
+	// .pets__pagination-btn--active
+
+	&__pagination-btn--active {
+		background: var(--color-primary);
+	}
+
+}
+
+
+
+

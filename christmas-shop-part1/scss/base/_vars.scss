@@ -1,0 +1,29 @@
+// fonts 
+
+
+
+
+:root{
+	//colors
+	--color-primary: rgb(255, 70, 70);
+	--color-primary-10: rgba(255, 70, 70, 0.1);
+	--color-dark: rgb(24, 28, 41);
+	--color-static-white: rgb(255, 255, 255);
+	--color-static-white-40: rgba(255, 255, 255, 0.4);
+	--color-static-white-20: rgba(255, 255, 255, 0.2);
+	--color-tag-purple: rgb(67, 97, 255);
+	--color-tag-pink: rgb(255, 67, 247);
+	--color-content-background: rgb(236, 243, 248);
+	--color-overlay: rgba(24, 28, 41, 0.8);
+
+	--border-radius: 20px;
+
+	--font-family-base: 'Montserrat', sans-serif;
+
+	--container-width: 1440px;
+	--container-padding-x: 82px;
+	--section-padding-y: 60px;
+
+	--button-height: 56px;
+	--transition-duration: 0.2s;
+}
